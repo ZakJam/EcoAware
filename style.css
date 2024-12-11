@@ -1,0 +1,170 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+/*    border: 1px red solid;*/
+    height: 100vh;
+    align-items: center;
+    background-color: #99E383 ;
+    color: white;
+    font-family: "La Belle Aurore", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(24px, 3vw, 40px);
+  
+}
+
+.width{
+    border: 1px blue solid;
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+
+/* LOGO */
+
+
+.logo{
+    border: 1px pink solid;
+    width: clamp(271px, 22vw,335px);
+}
+
+
+
+
+/* TESTO 1 E 2 */
+
+
+.testo{
+    width: 92%;
+    line-height: 35px;
+    text-align: center;
+    border: 1;
+    border: 1px solid pink;
+
+}
+
+.testo2{
+    color: black;
+    font-size: clamp(24px, 3vw, 36px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+
+}
+
+
+/* CONTAINER INPUT */
+
+
+.container-emissioni-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid blue;
+
+    
+}
+
+.fattori-input-1 , .fattori-input-2 , .fattori-input-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px ;
+}
+
+
+
+.input-wrapper-1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.input-wrapper-1::after{
+    content: "*kWh";
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    font-size: 15px ;
+    color: black;
+}
+
+.input-wrapper-2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-wrapper-2::after{
+    content: "*Km";
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    font-size: 15px ;
+    color: black;
+}
+.input-wrapper-3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-wrapper-3::after{
+    content: "*Kg";
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    font-size: 15px ;
+    color: black;
+}
+
+
+
+
+
+input{
+    border-radius: 15px;
+    width: clamp(82px, 15vw, 130px);
+    height: 41px;
+    border: none;
+}
+
+
+
+/* BUTTON */
+
+
+button{
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background-color: #6EBD83;
+    color: white;
+    border: none;
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+
+button:hover{
+    transform: scale(1.1);
+    background-color: #3f6d4b;
+}
