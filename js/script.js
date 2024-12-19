@@ -81,8 +81,8 @@ la riga riguardante*/
   if (inputKwh.value > 0) {
     risultato1 = inputKwh.value * 0.233;
 
-    valoriKwh.textContent = inputKwh.value;
-    valoriKwhKg.textContent = risultato1.toFixed(2);
+    valoriKwh.textContent = inputKwh.value + ' kWh' ;
+    valoriKwhKg.textContent = risultato1.toFixed(2) + ' Kg' ;
 
     rowEnergetiche.classList.remove("display-none");
   } else {
@@ -95,8 +95,8 @@ la riga riguardante*/
   if (inputKm.value > 0) {
     risultato2 = inputKm.value * 0.21;
 
-    valoriKm.textContent = inputKm.value;
-    valoriKmKg.textContent = risultato2.toFixed(2);
+    valoriKm.textContent = inputKm.value + ' Km' ;
+    valoriKmKg.textContent = risultato2.toFixed(2) + ' Kg';
 
     rowTrasporto.classList.remove("display-none");
   } else {
@@ -109,8 +109,8 @@ la riga riguardante*/
   if (inputKg.value > 0) {
     risultato3 = inputKg.value * 6;
 
-    valoriKg.textContent = inputKg.value;
-    valoriKgKg.textContent = risultato3.toFixed();
+    valoriKg.textContent = inputKg.value + ' Kg' ;
+    valoriKgKg.textContent = risultato3.toFixed() + ' Kg';
 
     rowCarne.classList.remove("display-none");
   } else {
@@ -125,7 +125,7 @@ la riga riguardante*/
       risultato1 + risultato2 + risultato3
     }`
   );
-  valoriTot.textContent = totale.toFixed(2);
+  valoriTot.textContent = totale.toFixed(2) + ' Kg';
 
   /*Se il totale è tra 0 e 167 allora dai al totale delle emissioni di carbonio il colore verde, altrimenti rosso*/
   if (totale > 0 && totale < 167) {

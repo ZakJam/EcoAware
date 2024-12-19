@@ -59,7 +59,6 @@ body {
   flex-direction: row;
   justify-content: center;
   font-size: clamp(15px, 5vw, 24px);
-  text-decoration: underline;
 }
 
 .fattori-input {
