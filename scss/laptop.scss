@@ -1,0 +1,151 @@
+
+
+/*MEDIA QUERY LAPTOP*/
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .wrapper-logo{
+
+        width: 280px;
+        margin-top: clamp(10px,5% ,21px);
+
+    }
+
+    .testo-1{
+        font-size: 28px;
+        width: 450px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+
+    }
+
+
+    .testo-2{
+        width: 406px;
+        font-size: 24px;
+        text-align: center;
+        color: black;
+        margin-bottom: 10px;
+        margin-top:10px ;
+
+    }
+
+
+    .fattori{
+        font-size: 26px;
+    }
+
+    .container-fattori-input{
+        margin-top: 10px;
+        width: 450px;
+        height: auto;
+    }
+
+    
+    input{
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+        
+    }
+
+    .btnConverti{
+        font-size: 20px;
+        margin-top: 0px ;
+        margin-bottom: 0px;
+        cursor: pointer;
+    }
+    
+    .btnConverti:hover{
+        background-color: #62ac6e;
+        
+    }
+    
+
+    .risultato{
+    
+        font-size: clamp(32px, 4.8vw ,46px);
+        margin-top: clamp(15px,5%,21px );
+        margin-bottom: clamp(15px,5%,21px );
+        width: 90%;
+        text-align: center;    
+        line-height: 30px;
+        
+    }
+
+    table{
+        width: 465px;
+        margin-top: clamp(15px,5%,21px );
+
+    }
+
+    table td{
+        border: 1px solid black;
+        font-size: 20px;
+        padding: 5px;
+    }
+    
+    .display-none{
+        display: none;
+    }
+    
+    .table-header td {
+        font-size: 24px;
+    }
+    
+    .fattori-table{
+        font-size: 20px;
+    }
+
+
+    .wrapper-input-kwh{
+        position: relative;
+    }
+    
+    .wrapper-input-kwh::after {
+    position: absolute;
+    content: '*kWh'; 
+    right: 5px; 
+    bottom: 30px;
+    color: black;
+    font-size: 16px;
+    }
+    
+    .wrapper-input-km{
+        position: relative;
+    }
+    
+    .wrapper-input-km::after {
+    position: absolute;
+    content: '*Km'; 
+    right: 5px; 
+    bottom: 30px;
+    color: black;
+    font-size: 16px;
+    }
+    
+    .wrapper-input-kg{
+        position: relative;
+    }
+    
+    .wrapper-input-kg::after {
+    position: absolute;
+    content: '*Kg'; 
+    right: 5px; 
+    bottom: 30px;
+    color: black;
+    font-size: 16px;
+    }
+    
+    .risultato{
+        font-size: 30px;
+        line-height: 44px;
+        
+    }
+    
+
+}
