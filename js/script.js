@@ -1,4 +1,4 @@
-
+'use strict'
 
 const inputKwh = document.querySelector('.input-1');
 const inputKm = document.querySelector('.input-2');
